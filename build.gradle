@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+subprojects {
+    group = 'org.project'
+    version = '1.0'
+
+    repositories {
+        mavenCentral()
+    }
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.17
+    targetCompatibility = 1.17
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
