@@ -1,0 +1,11 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.3'
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter:2.7.3'
+}
+
+springBoot {
+    mainClass = 'org.factory.Main'
+}
